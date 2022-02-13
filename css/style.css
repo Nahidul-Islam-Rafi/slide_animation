@@ -1,0 +1,62 @@
+.slider {
+  overflow: hidden;
+  height: 360px;
+  width: 360px;
+  margin-left: 38%;
+}
+img {
+  width: 360px;
+}
+
+@-webkit-keyframes slide_animation {
+  0% {
+    left: 0px;
+  }
+  10% {
+    left: 0px;
+  }
+  20% {
+    left: 360px;
+  }
+  30% {
+    left: 360px;
+  }
+  40% {
+    left: 720px;
+  }
+  50% {
+    left: 1080px;
+  }
+  60% {
+    left: 1080px;
+  }
+  70% {
+    left: 1440px;
+  }
+  80% {
+    left: 1440px;
+  }
+  90% {
+    left: 1800px;
+  }
+  100% {
+    left: 1800px;
+  }
+}
+.img-slider {
+  width: 2160px;
+  height: 360px;
+  margin: 0 0 0 -1800px;
+  position: relative;
+  -webkit-animation-name: slide_animation;
+  -webkit-animation-duration: 36s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
+}
+.img-container {
+  position: relative;
+  height: 360px;
+  width: 360px;
+  float: left;
+}
